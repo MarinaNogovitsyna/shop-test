@@ -14,7 +14,5 @@ export const requestOptions = {
     "Content-Type": "application/json",
     "X-Auth": md5(`Valantis_${getTimestamp()}`),
     "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
-    "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
   },
 };
