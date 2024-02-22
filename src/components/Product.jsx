@@ -8,7 +8,7 @@ export default function Product({ id }) {
   const [product, setProduct] = useState();
 
   useEffect(() => {
-    fetch("http://api.valantis.store:40000/", {
+    fetch("https://api.valantis.store:40000/", {
       ...requestOptions,
       body: JSON.stringify({
         action: "get_items",
