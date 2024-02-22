@@ -9,9 +9,10 @@ function getTimestamp() {
 }
 
 export const requestOptions = {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "X-Auth": md5(`Valantis_${getTimestamp()}`),
-    },
-}
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    "X-Auth": md5(`Valantis_${getTimestamp()}`),
+    "Access-Control-Allow-Origin": "https://marinanogovitsyna.github.io"
+  },
+};
