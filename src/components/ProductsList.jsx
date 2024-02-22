@@ -50,7 +50,7 @@ export default function ProductsList({ filter }) {
 
   useEffect(() => {
     setLoading(true);
-    fetch("https://api.valantis.store:40000/", {
+    fetch("http://api.valantis.store:40000/", {
       ...requestOptions,
       body: JSON.stringify(getBody()),
     })
