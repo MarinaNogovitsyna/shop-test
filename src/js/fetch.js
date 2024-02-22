@@ -13,6 +13,9 @@ export const requestOptions = {
   headers: {
     "Content-Type": "application/json",
     "X-Auth": md5(`Valantis_${getTimestamp()}`),
-    "Access-Control-Allow-Origin": "https://marinanogovitsyna.github.io"
+    "Access-Control-Allow-Origin": "https://marinanogovitsyna.github.io",
+    "Access-Control-Allow-Methods": "POST",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Allow-Credentials": "true",
   },
 };
